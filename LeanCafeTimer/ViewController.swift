@@ -115,11 +115,9 @@ class ViewController: UIViewController {
         extensionLabel.text = String(format: "%2d:%02d", extCounterMin, extCounterSec)
     }
     
-    
-    
     func updateExtensionCounter() {
         if extCounterMin == 0 && extCounterSec == 0 {
-            timerA.invalidate()
+            timerB.invalidate()
             extCounterMin = 2
             extCounterSec = 0
             //            counterMs = 0
