@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAC42AAE1D11C48100D2DCD5 /* chime1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */; };
+		BAC42AAF1D11C48100D2DCD5 /* chime2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */; };
+		BAC42AB01D11C48100D2DCD5 /* choirchime.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */; };
+		BAC42AB51D11C84900D2DCD5 /* beep1.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AB11D11C84900D2DCD5 /* beep1.wav */; };
+		BAC42AB61D11C84900D2DCD5 /* beep2.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AB21D11C84900D2DCD5 /* beep2.wav */; };
+		BAC42AB71D11C84900D2DCD5 /* beep3.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AB31D11C84900D2DCD5 /* beep3.wav */; };
+		BAC42AB81D11C84900D2DCD5 /* pause.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AB41D11C84900D2DCD5 /* pause.wav */; };
 		BAEA736F1D0F1DA6002D4564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA736E1D0F1DA6002D4564 /* AppDelegate.swift */; };
 		BAEA73711D0F1DA6002D4564 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA73701D0F1DA6002D4564 /* ViewController.swift */; };
 		BAEA73741D0F1DA6002D4564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEA73721D0F1DA6002D4564 /* Main.storyboard */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime1.aiff; sourceTree = "<group>"; };
+		BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime2.aiff; sourceTree = "<group>"; };
+		BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = choirchime.wav; sourceTree = "<group>"; };
+		BAC42AB11D11C84900D2DCD5 /* beep1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep1.wav; sourceTree = "<group>"; };
+		BAC42AB21D11C84900D2DCD5 /* beep2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep2.wav; sourceTree = "<group>"; };
+		BAC42AB31D11C84900D2DCD5 /* beep3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep3.wav; sourceTree = "<group>"; };
+		BAC42AB41D11C84900D2DCD5 /* pause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pause.wav; sourceTree = "<group>"; };
 		BAEA736B1D0F1DA6002D4564 /* LeanCafeTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeanCafeTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEA736E1D0F1DA6002D4564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAEA73701D0F1DA6002D4564 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				BAEA736E1D0F1DA6002D4564 /* AppDelegate.swift */,
+				BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */,
+				BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */,
+				BAC42AB11D11C84900D2DCD5 /* beep1.wav */,
+				BAC42AB21D11C84900D2DCD5 /* beep2.wav */,
+				BAC42AB31D11C84900D2DCD5 /* beep3.wav */,
+				BAC42AB41D11C84900D2DCD5 /* pause.wav */,
+				BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */,
 				BAEA73701D0F1DA6002D4564 /* ViewController.swift */,
 				BAEA73721D0F1DA6002D4564 /* Main.storyboard */,
 				BAEA73751D0F1DA6002D4564 /* Assets.xcassets */,
@@ -230,8 +251,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC42AB71D11C84900D2DCD5 /* beep3.wav in Resources */,
+				BAC42AAF1D11C48100D2DCD5 /* chime2.aiff in Resources */,
+				BAC42AB01D11C48100D2DCD5 /* choirchime.wav in Resources */,
+				BAC42AB81D11C84900D2DCD5 /* pause.wav in Resources */,
 				BAEA73791D0F1DA6002D4564 /* LaunchScreen.storyboard in Resources */,
+				BAC42AB61D11C84900D2DCD5 /* beep2.wav in Resources */,
 				BAEA73761D0F1DA6002D4564 /* Assets.xcassets in Resources */,
+				BAC42AAE1D11C48100D2DCD5 /* chime1.aiff in Resources */,
+				BAC42AB51D11C84900D2DCD5 /* beep1.wav in Resources */,
 				BAEA73741D0F1DA6002D4564 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +513,7 @@
 				BAEA73951D0F1DA6002D4564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEA73961D0F1DA6002D4564 /* Build configuration list for PBXNativeTarget "LeanCafeTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +522,7 @@
 				BAEA73981D0F1DA6002D4564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEA73991D0F1DA6002D4564 /* Build configuration list for PBXNativeTarget "LeanCafeTimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +531,7 @@
 				BAEA739B1D0F1DA6002D4564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
