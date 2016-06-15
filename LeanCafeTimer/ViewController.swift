@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var countingLabel: UILabel!
     @IBOutlet weak var extensionLabel: UILabel!
-    
+    @IBOutlet weak var statusBar: UIProgressView!
+
+    var progress: Float = 0.0
+    var startChime : AVAudioPlayer!
+    var stopChime : AVAudioPlayer!
+    var endChime : AVAudioPlayer!
+    var pauseChime : AVAudioPlayer!
     var timerA = NSTimer()
     var timerB = NSTimer()
 //    var counterSec = 0
@@ -23,20 +30,83 @@ class ViewController: UIViewController {
     
     var extCounterMin = 2
     var extCounterSec = 0
+    
+    
+    
+    func playEndChime(){
+        do {
+            self.endChime =  try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("choirchime", ofType: "wav")!))
+            self.endChime?.prepareToPlay()
+            self.endChime?.volume = 1
+            self.endChime.play()
+            
+        } catch {
+            print("Error")
+        }
+    }
+    
+    func playPauseChime(){
+        do {
+            self.pauseChime =  try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pause", ofType: "wav")!))
+            self.pauseChime?.prepareToPlay()
+            self.pauseChime?.volume = 1
+            self.pauseChime.play()
+            
+        } catch {
+            print("Error")
+        }
+    }
+    
+    func playStopChime(){
+        do {
+            self.stopChime =  try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beep2", ofType: "wav")!))
+            self.stopChime?.prepareToPlay()
+            self.stopChime?.volume = 1
+            self.stopChime.play()
+            
+        } catch {
+            print("Error")
+        }
+    }
+    
+    func playStartChime(){
+        do {
+            self.startChime =  try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beep3", ofType: "wav")!))
+            self.startChime?.prepareToPlay()
+            self.startChime?.volume = 1
+            self.startChime.play()
+            
+        } catch {
+            print("Error")
+        }
+    }
 
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         countingLabel.text = String(format: "%2d:%02d", counterMin, counterSec)
         extensionLabel.text = String(format: "%2d:%02d", extCounterMin, extCounterSec)
+        progress = 0
+        statusBar.progress = progress
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateProgressBar(){
+        print(progress)
+        if progress >= 1.0 {
+            print("progress is over one ")
+            progress = 0.1
+            statusBar.progress = progress
+        }
+        else {
+            progress += 0.1
+            statusBar.progress = progress
+        }
     }
 
     @IBAction func startButton(sender: AnyObject) {
@@ -44,6 +114,8 @@ class ViewController: UIViewController {
         if timerA.valid == false {
             timerA = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.updateCounter), userInfo: nil, repeats: true)
             print("Start Timer")
+            playStartChime()
+            
         }
         else {
             print("Timer Active")
@@ -53,6 +125,7 @@ class ViewController: UIViewController {
     @IBAction func pausebutton(sender: AnyObject) {
     
         timerA.invalidate()
+        playPauseChime()
         print("Timer Paused")
     }
     
@@ -62,7 +135,10 @@ class ViewController: UIViewController {
         counterSec = 0
 //        counterMs = 0
         countingLabel.text = String(format: "%2d:%02d", counterMin, counterSec)
-    
+        playStopChime()
+        progress = 0
+        statusBar.progress = progress
+
     }
     
     func updateCounter() {
@@ -72,6 +148,8 @@ class ViewController: UIViewController {
             counterSec = 0
 //            counterMs = 0
             print("timer completed")
+            playEndChime()
+
         }
         else if counterSec == 0 {
             counterSec = 59
@@ -79,6 +157,7 @@ class ViewController: UIViewController {
         }
         else {
             counterSec -= 1
+            updateProgressBar()
         }
         countingLabel.text = String(format: "%2d:%02d", counterMin, counterSec)
         
@@ -93,6 +172,7 @@ class ViewController: UIViewController {
         if timerB.valid == false {
             timerB = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.updateExtensionCounter), userInfo: nil, repeats: true)
             print("Start Extension Timer")
+            playStartChime()
         }
         else {
             print("Extension Timer Active")
@@ -103,6 +183,7 @@ class ViewController: UIViewController {
     
     @IBAction func extPauseButton(sender: AnyObject) {
         timerB.invalidate()
+        playPauseChime()
         print("Extension Timer Paused")
         
     }
@@ -113,17 +194,18 @@ class ViewController: UIViewController {
         extCounterMin = 2
         extCounterSec = 0
         extensionLabel.text = String(format: "%2d:%02d", extCounterMin, extCounterSec)
+        playStopChime()
     }
-    
-    
     
     func updateExtensionCounter() {
         if extCounterMin == 0 && extCounterSec == 0 {
-            timerA.invalidate()
+            timerB.invalidate()
             extCounterMin = 2
             extCounterSec = 0
             //            counterMs = 0
             print("timer completed")
+            playEndChime()
+
         }
         else if extCounterSec == 0 {
             extCounterSec = 59

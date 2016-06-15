@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  LeanCafeTimer
 //
-//  Created by Crystal on 2016-06-13.
+//  Created by Todd Cardoso on 2016-06-13.
 //  Copyright © 2016 TJC. All rights reserved.
 //
 
