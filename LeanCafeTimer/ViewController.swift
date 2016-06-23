@@ -89,6 +89,15 @@ class ViewController: UIViewController {
         extensionLabel.text = String(format: "%2d:%02d", extCounterMin, extCounterSec)
         progress = 0
         statusBar.progress = progress
+        
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "bg4")?.drawAsPatternInRect(self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
     }
 
     override func didReceiveMemoryWarning() {
