@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1A191B1D21D4BB00E7528E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1A191A1D21D4BB00E7528E /* Assets.xcassets */; };
 		BAC42AAE1D11C48100D2DCD5 /* chime1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */; };
 		BAC42AAF1D11C48100D2DCD5 /* chime2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */; };
 		BAC42AB01D11C48100D2DCD5 /* choirchime.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */; };
@@ -17,7 +18,6 @@
 		BAEA736F1D0F1DA6002D4564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA736E1D0F1DA6002D4564 /* AppDelegate.swift */; };
 		BAEA73711D0F1DA6002D4564 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA73701D0F1DA6002D4564 /* ViewController.swift */; };
 		BAEA73741D0F1DA6002D4564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEA73721D0F1DA6002D4564 /* Main.storyboard */; };
-		BAEA73761D0F1DA6002D4564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEA73751D0F1DA6002D4564 /* Assets.xcassets */; };
 		BAEA73791D0F1DA6002D4564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEA73771D0F1DA6002D4564 /* LaunchScreen.storyboard */; };
 		BAEA73841D0F1DA6002D4564 /* LeanCafeTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA73831D0F1DA6002D4564 /* LeanCafeTimerTests.swift */; };
 		BAEA738F1D0F1DA6002D4564 /* LeanCafeTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA738E1D0F1DA6002D4564 /* LeanCafeTimerUITests.swift */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA1A191A1D21D4BB00E7528E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime1.aiff; sourceTree = "<group>"; };
 		BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime2.aiff; sourceTree = "<group>"; };
 		BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = choirchime.wav; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		BAEA736E1D0F1DA6002D4564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAEA73701D0F1DA6002D4564 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAEA73731D0F1DA6002D4564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BAEA73751D0F1DA6002D4564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAEA73781D0F1DA6002D4564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAEA737A1D0F1DA6002D4564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEA737F1D0F1DA6002D4564 /* LeanCafeTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeanCafeTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,8 +120,8 @@
 				BAC42AB41D11C84900D2DCD5 /* pause.wav */,
 				BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */,
 				BAEA73701D0F1DA6002D4564 /* ViewController.swift */,
+				BA1A191A1D21D4BB00E7528E /* Assets.xcassets */,
 				BAEA73721D0F1DA6002D4564 /* Main.storyboard */,
-				BAEA73751D0F1DA6002D4564 /* Assets.xcassets */,
 				BAEA73771D0F1DA6002D4564 /* LaunchScreen.storyboard */,
 				BAEA737A1D0F1DA6002D4564 /* Info.plist */,
 			);
@@ -255,9 +255,9 @@
 				BAC42AAF1D11C48100D2DCD5 /* chime2.aiff in Resources */,
 				BAC42AB01D11C48100D2DCD5 /* choirchime.wav in Resources */,
 				BAC42AB81D11C84900D2DCD5 /* pause.wav in Resources */,
+				BA1A191B1D21D4BB00E7528E /* Assets.xcassets in Resources */,
 				BAEA73791D0F1DA6002D4564 /* LaunchScreen.storyboard in Resources */,
 				BAC42AB61D11C84900D2DCD5 /* beep2.wav in Resources */,
-				BAEA73761D0F1DA6002D4564 /* Assets.xcassets in Resources */,
 				BAC42AAE1D11C48100D2DCD5 /* chime1.aiff in Resources */,
 				BAC42AB51D11C84900D2DCD5 /* beep1.wav in Resources */,
 				BAEA73741D0F1DA6002D4564 /* Main.storyboard in Resources */,
