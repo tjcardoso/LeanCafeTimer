@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -19,135 +18,137 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-hV-Mgm">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-hV-Mgm">
                                 <rect key="frame" x="113" y="525" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="RDK-lE-iUh"/>
                                     <barButtonItem systemItem="play" id="3pL-7N-yqA">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.69795673079999998" green="0.35898842990000002" blue="0.15790234989999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="extStartButton:" destination="BYZ-38-t0r" id="l6q-tK-I5V"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="CHT-RB-g4q"/>
                                     <barButtonItem systemItem="pause" id="1vp-ME-bkg">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.69795673079999998" green="0.35898842990000002" blue="0.15790234989999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="extPauseButton:" destination="BYZ-38-t0r" id="Vi6-ty-NEf"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="kbN-3P-CsF"/>
                                     <barButtonItem systemItem="refresh" id="xwg-pj-Wj5">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.69795673079999998" green="0.35898842990000002" blue="0.15790234989999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="extResetButton:" destination="BYZ-38-t0r" id="wkF-Q8-6Of"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="QML-yN-IhB"/>
                                 </items>
-                                <color key="barTintColor" red="0.67754226920000005" green="0.1176954731" blue="0.23123499750000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="748" width="400" height="44"/>
                                 </variation>
                             </toolbar>
-                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-br-c7R">
+                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-br-c7R">
                                 <rect key="frame" x="113" y="230" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.67754226920000005" green="0.1176954731" blue="0.23123499750000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7JC-46-Rga"/>
                                     <barButtonItem systemItem="play" id="gei-sB-XT1">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.6979567307692307" green="0.35898842991026003" blue="0.15790234985654522" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="startButton:" destination="BYZ-38-t0r" id="fWJ-0j-qFL"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Lm9-OA-f2O"/>
                                     <barButtonItem systemItem="pause" id="lNa-2w-Qd4">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.6979567307692307" green="0.35898842991026003" blue="0.15790234985654522" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="pausebutton:" destination="BYZ-38-t0r" id="LDq-KT-R9T"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="bKF-1C-wgC"/>
                                     <barButtonItem systemItem="refresh" id="58d-zq-hRM">
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.6979567307692307" green="0.35898842991026003" blue="0.15790234985654522" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="stopButton:" destination="BYZ-38-t0r" id="PGJ-KX-uNH"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="qCh-yB-YDg"/>
                                 </items>
-                                <color key="barTintColor" red="0.67754226920000005" green="0.1176954731" blue="0.23123499750000001" alpha="0.39199892241379308" colorSpace="deviceRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="348" width="400" height="44"/>
                                 </variation>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcQ-8U-Evc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcQ-8U-Evc">
                                 <rect key="frame" x="158" y="98" width="284" height="117"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="80"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="58" y="159" width="284" height="117"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Idea Discussion" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpS-OF-LPW">
-                                <rect key="frame" x="184" y="28" width="233" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Idea Discussion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpS-OF-LPW">
+                                <rect key="frame" x="184" y="29" width="233" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="29"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="126" y="74" width="148" height="30"/>
                                 </variation>
                             </textField>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-FM-Xyt">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-FM-Xyt">
                                 <rect key="frame" x="172" y="88" width="256" height="3"/>
                             </progressView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Extension" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-x7-xTQ">
-                                <rect key="frame" x="217" y="293" width="166" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Extension" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-x7-xTQ">
+                                <rect key="frame" x="217" y="293" width="166" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="148" y="461" width="105" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-ov-DP1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-ov-DP1">
                                 <rect key="frame" x="148" y="351" width="305" height="129"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="80"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="72" y="530" width="256" height="105"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bean" translatesAutoresizingMaskIntoConstraints="NO" id="ktH-67-TQA">
-                                <rect key="frame" x="20" y="20" width="52" height="41"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="52" id="Att-k9-SKk"/>
-                                    <constraint firstAttribute="height" constant="41" id="BbI-wl-fXm"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reversebean" translatesAutoresizingMaskIntoConstraints="NO" id="e3X-rD-azs">
-                                <rect key="frame" x="528" y="20" width="52" height="41"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="5z2-6g-H4e"/>
-                                    <constraint firstAttribute="width" constant="52" id="r96-un-egi"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ktH-67-TQA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DhF-Xh-btO"/>
-                            <constraint firstItem="e3X-rD-azs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dC3-mq-lph"/>
+                            <constraint firstAttribute="trailing" secondItem="TLi-ov-DP1" secondAttribute="trailing" id="0w1-HO-VQl"/>
+                            <constraint firstAttribute="trailing" secondItem="gdo-x7-xTQ" secondAttribute="trailing" id="6OK-vj-nRf"/>
+                            <constraint firstAttribute="centerY" secondItem="VcQ-8U-Evc" secondAttribute="top" multiplier="2.6" id="7oA-rS-uyh"/>
+                            <constraint firstAttribute="centerY" secondItem="gdo-x7-xTQ" secondAttribute="top" multiplier="0.95" id="8FU-A1-45B"/>
+                            <constraint firstItem="VcQ-8U-Evc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9bA-6h-CQT"/>
+                            <constraint firstItem="SpS-OF-LPW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CZu-Nx-vP4"/>
+                            <constraint firstAttribute="trailing" secondItem="SpS-OF-LPW" secondAttribute="trailing" id="F47-jb-A1L"/>
+                            <constraint firstAttribute="trailing" secondItem="RCg-hV-Mgm" secondAttribute="trailing" id="GJe-9I-a2J"/>
+                            <constraint firstAttribute="centerY" secondItem="tXh-FM-Xyt" secondAttribute="top" multiplier="2.8" symbolic="YES" id="Me6-D3-Xru"/>
+                            <constraint firstAttribute="trailing" secondItem="ahd-br-c7R" secondAttribute="trailing" id="Miy-AW-d4c"/>
+                            <constraint firstAttribute="bottom" secondItem="RCg-hV-Mgm" secondAttribute="bottom" id="PwO-29-vzo"/>
+                            <constraint firstItem="ahd-br-c7R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R9h-s6-Y7a"/>
+                            <constraint firstItem="TLi-ov-DP1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SH4-gU-pgc"/>
+                            <constraint firstAttribute="centerX" secondItem="tXh-FM-Xyt" secondAttribute="leading" multiplier="2.5" id="UQG-GK-w4j"/>
+                            <constraint firstItem="gdo-x7-xTQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aDB-9p-NSP"/>
+                            <constraint firstItem="tXh-FM-Xyt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="bDE-OO-EnP"/>
+                            <constraint firstAttribute="trailing" secondItem="VcQ-8U-Evc" secondAttribute="trailing" id="bff-Qs-y04"/>
+                            <constraint firstItem="RCg-hV-Mgm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f4z-np-RC2"/>
                             <constraint firstItem="SpS-OF-LPW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gVb-7T-qfl"/>
-                            <constraint firstItem="e3X-rD-azs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mNE-7G-7CY"/>
-                            <constraint firstItem="ktH-67-TQA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mYx-yx-CNl"/>
-                            <constraint firstAttribute="trailing" secondItem="SpS-OF-LPW" secondAttribute="centerX" multiplier="2" id="rCt-FL-sL2"/>
+                            <constraint firstAttribute="centerY" secondItem="ahd-br-c7R" secondAttribute="top" multiplier="1.2" id="ght-lV-f9t"/>
+                            <constraint firstAttribute="bottom" secondItem="TLi-ov-DP1" secondAttribute="bottom" multiplier="1.12" id="yXT-Sp-xLl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="yRs-ju-PW0"/>
@@ -163,8 +164,4 @@
             <point key="canvasLocation" x="302" y="349"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bean" width="1242" height="1280"/>
-        <image name="reversebean" width="1280" height="1242"/>
-    </resources>
 </document>
