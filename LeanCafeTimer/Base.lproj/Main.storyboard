@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-hV-Mgm">
-                                <rect key="frame" x="113" y="525" width="375" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-hV-Mgm">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="RDK-lE-iUh"/>
@@ -51,8 +51,8 @@
                                     <rect key="frame" x="0.0" y="748" width="400" height="44"/>
                                 </variation>
                             </toolbar>
-                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-br-c7R">
-                                <rect key="frame" x="113" y="230" width="375" height="44"/>
+                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-br-c7R">
+                                <rect key="frame" x="0.0" y="250" width="600" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7JC-46-Rga"/>
@@ -84,41 +84,41 @@
                                     <rect key="frame" x="0.0" y="348" width="400" height="44"/>
                                 </variation>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcQ-8U-Evc">
-                                <rect key="frame" x="158" y="98" width="284" height="117"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcQ-8U-Evc">
+                                <rect key="frame" x="0.0" y="109" width="600" height="132"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="82"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="58" y="159" width="284" height="117"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Idea Discussion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpS-OF-LPW">
-                                <rect key="frame" x="184" y="29" width="233" height="36"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Idea Discussion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpS-OF-LPW">
+                                <rect key="frame" x="0.0" y="28" width="600" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="126" y="74" width="148" height="30"/>
                                 </variation>
                             </textField>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-FM-Xyt">
-                                <rect key="frame" x="172" y="88" width="256" height="3"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-FM-Xyt">
+                                <rect key="frame" x="120" y="107" width="330" height="3"/>
                             </progressView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Extension" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-x7-xTQ">
-                                <rect key="frame" x="217" y="293" width="166" height="38"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Extension" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-x7-xTQ">
+                                <rect key="frame" x="0.0" y="326" width="600" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="34"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="148" y="461" width="105" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-ov-DP1">
-                                <rect key="frame" x="148" y="351" width="305" height="129"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-ov-DP1">
+                                <rect key="frame" x="0.0" y="404" width="600" height="132"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="82"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -130,8 +130,8 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="TLi-ov-DP1" secondAttribute="trailing" id="0w1-HO-VQl"/>
                             <constraint firstAttribute="trailing" secondItem="gdo-x7-xTQ" secondAttribute="trailing" id="6OK-vj-nRf"/>
-                            <constraint firstAttribute="centerY" secondItem="VcQ-8U-Evc" secondAttribute="top" multiplier="2.6" id="7oA-rS-uyh"/>
-                            <constraint firstAttribute="centerY" secondItem="gdo-x7-xTQ" secondAttribute="top" multiplier="0.95" id="8FU-A1-45B"/>
+                            <constraint firstAttribute="bottom" secondItem="VcQ-8U-Evc" secondAttribute="top" multiplier="5.5" id="7oA-rS-uyh"/>
+                            <constraint firstAttribute="centerY" secondItem="gdo-x7-xTQ" secondAttribute="top" multiplier="0.92" id="8FU-A1-45B"/>
                             <constraint firstItem="VcQ-8U-Evc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9bA-6h-CQT"/>
                             <constraint firstItem="SpS-OF-LPW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CZu-Nx-vP4"/>
                             <constraint firstAttribute="trailing" secondItem="SpS-OF-LPW" secondAttribute="trailing" id="F47-jb-A1L"/>

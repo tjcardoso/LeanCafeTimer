@@ -120,8 +120,8 @@
 				BAC42AB41D11C84900D2DCD5 /* pause.wav */,
 				BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */,
 				BAEA73701D0F1DA6002D4564 /* ViewController.swift */,
-				BA1A191A1D21D4BB00E7528E /* Assets.xcassets */,
 				BAEA73721D0F1DA6002D4564 /* Main.storyboard */,
+				BA1A191A1D21D4BB00E7528E /* Assets.xcassets */,
 				BAEA73771D0F1DA6002D4564 /* LaunchScreen.storyboard */,
 				BAEA737A1D0F1DA6002D4564 /* Info.plist */,
 			);
