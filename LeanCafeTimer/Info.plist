@@ -32,6 +32,11 @@
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>digital_counter_7.ttf</string>
+		<string>Crysta.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

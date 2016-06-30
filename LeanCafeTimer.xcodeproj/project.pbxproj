@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BA1A191B1D21D4BB00E7528E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1A191A1D21D4BB00E7528E /* Assets.xcassets */; };
+		BA995E211D25C8CA00676E02 /* Crysta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA995E201D25C8C900676E02 /* Crysta.ttf */; };
+		BA995E231D25C8D800676E02 /* digital_counter_7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA995E221D25C8D800676E02 /* digital_counter_7.ttf */; };
+		BAA40EA41D2463660033119F /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA40EA31D2463660033119F /* Timer.swift */; };
 		BAC42AAE1D11C48100D2DCD5 /* chime1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */; };
 		BAC42AAF1D11C48100D2DCD5 /* chime2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */; };
 		BAC42AB01D11C48100D2DCD5 /* choirchime.wav in Resources */ = {isa = PBXBuildFile; fileRef = BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		BA1A191A1D21D4BB00E7528E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA995E201D25C8C900676E02 /* Crysta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crysta.ttf; sourceTree = "<group>"; };
+		BA995E221D25C8D800676E02 /* digital_counter_7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = digital_counter_7.ttf; sourceTree = "<group>"; };
+		BAA40EA31D2463660033119F /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime1.aiff; sourceTree = "<group>"; };
 		BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime2.aiff; sourceTree = "<group>"; };
 		BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = choirchime.wav; sourceTree = "<group>"; };
@@ -88,6 +94,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAA40E9F1D2462470033119F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAA40EA31D2463660033119F /* Timer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BAA40EA01D24624B0033119F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAEA73701D0F1DA6002D4564 /* ViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BAA40EA11D2462530033119F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BAA40EA21D2462770033119F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA995E221D25C8D800676E02 /* digital_counter_7.ttf */,
+				BA995E201D25C8C900676E02 /* Crysta.ttf */,
+				BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */,
+				BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */,
+				BAC42AB11D11C84900D2DCD5 /* beep1.wav */,
+				BAC42AB21D11C84900D2DCD5 /* beep2.wav */,
+				BAC42AB31D11C84900D2DCD5 /* beep3.wav */,
+				BAC42AB41D11C84900D2DCD5 /* pause.wav */,
+				BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		BAEA73621D0F1DA6002D4564 = {
 			isa = PBXGroup;
 			children = (
@@ -111,15 +156,11 @@
 		BAEA736D1D0F1DA6002D4564 /* LeanCafeTimer */ = {
 			isa = PBXGroup;
 			children = (
+				BAA40EA21D2462770033119F /* Resources */,
+				BAA40E9F1D2462470033119F /* Model */,
+				BAA40EA01D24624B0033119F /* View */,
+				BAA40EA11D2462530033119F /* Controller */,
 				BAEA736E1D0F1DA6002D4564 /* AppDelegate.swift */,
-				BAC42AAB1D11C48100D2DCD5 /* chime1.aiff */,
-				BAC42AAC1D11C48100D2DCD5 /* chime2.aiff */,
-				BAC42AB11D11C84900D2DCD5 /* beep1.wav */,
-				BAC42AB21D11C84900D2DCD5 /* beep2.wav */,
-				BAC42AB31D11C84900D2DCD5 /* beep3.wav */,
-				BAC42AB41D11C84900D2DCD5 /* pause.wav */,
-				BAC42AAD1D11C48100D2DCD5 /* choirchime.wav */,
-				BAEA73701D0F1DA6002D4564 /* ViewController.swift */,
 				BAEA73721D0F1DA6002D4564 /* Main.storyboard */,
 				BA1A191A1D21D4BB00E7528E /* Assets.xcassets */,
 				BAEA73771D0F1DA6002D4564 /* LaunchScreen.storyboard */,
@@ -251,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA995E231D25C8D800676E02 /* digital_counter_7.ttf in Resources */,
 				BAC42AB71D11C84900D2DCD5 /* beep3.wav in Resources */,
 				BAC42AAF1D11C48100D2DCD5 /* chime2.aiff in Resources */,
 				BAC42AB01D11C48100D2DCD5 /* choirchime.wav in Resources */,
@@ -260,6 +302,7 @@
 				BAC42AB61D11C84900D2DCD5 /* beep2.wav in Resources */,
 				BAC42AAE1D11C48100D2DCD5 /* chime1.aiff in Resources */,
 				BAC42AB51D11C84900D2DCD5 /* beep1.wav in Resources */,
+				BA995E211D25C8CA00676E02 /* Crysta.ttf in Resources */,
 				BAEA73741D0F1DA6002D4564 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA40EA41D2463660033119F /* Timer.swift in Sources */,
 				BAEA73711D0F1DA6002D4564 /* ViewController.swift in Sources */,
 				BAEA736F1D0F1DA6002D4564 /* AppDelegate.swift in Sources */,
 			);
