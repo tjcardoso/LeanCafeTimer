@@ -90,14 +90,14 @@ class ViewController: UIViewController {
         progress = 0
         statusBar.progress = progress
         
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "bg4")?.drawAsPatternInRect(self.view.bounds)
-        
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        
-        UIGraphicsEndImageContext()
-        
-        self.view.backgroundColor = UIColor(patternImage: image)
+//        UIGraphicsBeginImageContext(self.view.frame.size)
+//        UIImage(named: "bg4")?.drawAsPatternInRect(self.view.bounds)
+//        
+//        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+//        
+//        UIGraphicsEndImageContext()
+//        
+//        self.view.backgroundColor = UIColor(patternImage: image)
     }
 
     override func didReceiveMemoryWarning() {
